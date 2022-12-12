@@ -30,9 +30,16 @@
 <br/>
 <br/>
 
+
+### Table of contents
+
+- [Google Colab link](https://colab.research.google.com/github/taskswithcode/GriT/blob/master/TWCGRiT.ipynb)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/taskswithcode/GriT/blob/master/TWCGRiT.ipynb)
+
+- [Original repo](#a-generative-region-to-text-transformer-for-object-understanding )
+
 <img src="divider.png"   width="1000px"/>
 
-# GRiT: A Generative Region-to-text Transformer for Object Understanding
+# A Generative Region-to-text Transformer for Object Understanding
 GRiT is a general and open-set object understanding framework that localizes objects and
 describes them with any style of free-form texts it was trained with, e.g., class names, descriptive sentences 
 (including object attributes, actions, counts and many more).
