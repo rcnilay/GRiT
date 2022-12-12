@@ -5,7 +5,7 @@
 ### Table of contents
 
 - [This fork adds a Google Colab link to try model](https://colab.research.google.com/github/taskswithcode/GriT/blob/master/TWCGRiT.ipynb)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/taskswithcode/GriT/blob/master/TWCGRiT.ipynb)
-- Also qualitatively compares this model with Object detection and captioning using Detic with ChatGPT _(notes blow)_
+- Also qualitatively compares this model with Object detection and captioning using Detic with ChatGPT _(notes below)_
 - [Original repo - below](#a-generative-region-to-text-transformer-for-object-understanding )
 <p align="center">
   <a href="main.png">
