@@ -1,3 +1,34 @@
+<br/>
+<br/>
+<h3 align="center">Object Detection and Object captioning  - examples created using published model</h3>
+<p align="center">
+  <a href="main.png">
+    <img src="main.png" alt="Dense captioning">
+  </a>
+   <h4 align="center">Dense captioning of images - use case 1</h4>
+</p>
+<br/>
+<p align="center">
+  <a href="o7.png">
+    <img src="o7.png" alt="Object Detection - working case" width="400">
+  </a>
+  <h4 align="center">Object Detection - use case 2</h4>
+</p>
+<br/>
+<p align="center">
+  <a href="o6.png">
+    <img src="o6.png" alt="Object Detection - behaviour of mapping objects to other known classes" width="400">
+  </a>
+  <h4 align="center">Object Detection - behaviour of incorrectly mapping objects to other known classes</h4>
+</p>
+<br/>
+
+<h4 align="center"><a href="https://medium.com/@taskswithcode/twc-9-7c960c921f69">Newsletter describing this paper</a></h4>
+<br/>
+<br/>
+
+
+
 # GRiT: A Generative Region-to-text Transformer for Object Understanding
 GRiT is a general and open-set object understanding framework that localizes objects and
 describes them with any style of free-form texts it was trained with, e.g., class names, descriptive sentences 
