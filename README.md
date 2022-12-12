@@ -23,7 +23,8 @@
 </p>
 <br/>
 
-<h4 align="center"><a href="https://medium.com/@taskswithcode/twc-9-7c960c921f69">Newsletter describing this paper</a></h4>
+<h4 align="center"><a href="https://twitter.com/TasksWithCode/status/1602038479571099649?s=20&t=0NclGlJF5OCVDA3HHkO4eg">Twitter thread comparing this article to Detic with ChatGPT</a></h4>
+<h4 align="center"><a href="https://huggingface.co/spaces/taskswithcode/DeticChatGPT">An app to use to Detic to output object classes with coordinates and dimensions which can be used to cut-and-paste to ChatGPT playground for dense captioning.</a></h4>
 <br/>
 <br/>
 
