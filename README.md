@@ -23,12 +23,14 @@
 </p>
 <br/>
 
-<h4 align="center"><a href="https://twitter.com/TasksWithCode/status/1602038479571099649?s=20&t=0NclGlJF5OCVDA3HHkO4eg">Twitter thread comparing this article to Detic with ChatGPT</a></h4>
-<h4 align="center"><a href="https://huggingface.co/spaces/taskswithcode/DeticChatGPT">An app to use to Detic to output object classes with coordinates and dimensions which can be used to cut-and-paste to ChatGPT playground for dense captioning.</a></h4>
+
+<div style=\"font-size:32px; color: #2f2f2f; text-align: center\"><b>Related Links</b></div>
+<div style=\"font-size:20px; color: #4f4f4f; text-align: center\"><a href="https://twitter.com/TasksWithCode/status/1602038479571099649?s=20&t=0NclGlJF5OCVDA3HHkO4eg">Twitter thread </a>comparing this model to Detic with ChatGPT</div>
+<div style=\"font-size:20px; color: #4f4f4f; text-align: center\"><a href="https://huggingface.co/spaces/taskswithcode/DeticChatGPT">A Hugging Face app 🤗 using to Detic </a>to output object classes with coordinates and dimensions which can be used to cut-and-paste to ChatGPT playground for dense captioning.</h4>
 <br/>
 <br/>
 
-
+<img src="divider.png"   width="1000px"/>
 
 # GRiT: A Generative Region-to-text Transformer for Object Understanding
 GRiT is a general and open-set object understanding framework that localizes objects and
