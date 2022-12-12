@@ -1,6 +1,12 @@
 <br/>
 <br/>
 <h3 align="center">Object Detection and Object captioning  - examples created using published model</h3>
+
+### Table of contents
+
+- [This fork adds a Google Colab link to try model](https://colab.research.google.com/github/taskswithcode/GriT/blob/master/TWCGRiT.ipynb)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/taskswithcode/GriT/blob/master/TWCGRiT.ipynb)
+- Also qualitatively compares this model with Object detection and captioning using Detic with ChatGPT (see images blow)
+- [Original repo - below](#a-generative-region-to-text-transformer-for-object-understanding )
 <p align="center">
   <a href="main.png">
     <img src="main.png" alt="Dense captioning">
@@ -23,19 +29,15 @@
 </p>
 <br/>
 
+<div style=\"font-size:32px; color: #2f2f2f; text-align: center\"><b>Evaluation notes</b></div>
+<div style=\"font-size:20px; color: #4f4f4f; text-align: center\"><i>Dense captioning for objects that are detected captures some aspect of the object features beyond just the object class name. This is a consequence of the captioning component getting object features in the form of image patches. For instance in some pictures, the captioning describes the "sky" (detected object) as clear vs dark etc.<br/>This particular aspect is perhaps a distinguising factor of this approach compared to dense captioning using a model like Detic which feeds the object class name with coordinates and dimensions to ChatGPT. While ChatGPT's output is superior to the dense captioning of GriT particularly the ability of the model to offer rich summary of a scene beyond just individual objects, it is at a disadvantage in its description since it is <b>blind</b> to the characteristics of the object, since it only gets as input object name, position, and size.<br/>Also Detic's object detection capability anecdotally is better than GrIT.<br/><br/> </i></div>
 
 <div style=\"font-size:32px; color: #2f2f2f; text-align: center\"><b>Related Links</b></div>
 <div style=\"font-size:20px; color: #4f4f4f; text-align: center\"><a href="https://twitter.com/TasksWithCode/status/1602038479571099649?s=20&t=0NclGlJF5OCVDA3HHkO4eg">Twitter thread </a>comparing this model to Detic with ChatGPT</div>
-<div style=\"font-size:20px; color: #4f4f4f; text-align: center\"><a href="https://huggingface.co/spaces/taskswithcode/DeticChatGPT">A Hugging Face app 🤗 using to Detic </a>to output object classes with coordinates and dimensions which can be used to cut-and-paste to ChatGPT playground for dense captioning.</h4>
+<div style=\"font-size:20px; color: #4f4f4f; text-align: center\"><a href="https://huggingface.co/spaces/taskswithcode/DeticChatGPT">A Hugging Face app 🤗 using to Detic </a>to output object classes with coordinates and dimensions which can be used to cut-and-paste to ChatGPT playground for dense captioning.</div>
 <br/>
 <br/>
 
-
-### Table of contents
-
-- [Google Colab link](https://colab.research.google.com/github/taskswithcode/GriT/blob/master/TWCGRiT.ipynb)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/taskswithcode/GriT/blob/master/TWCGRiT.ipynb)
-
-- [Original repo](#a-generative-region-to-text-transformer-for-object-understanding )
 
 <img src="divider.png"   width="1000px"/>
 
