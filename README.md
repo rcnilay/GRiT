@@ -5,7 +5,7 @@
 ### Table of contents
 
 - [This fork adds a Google Colab link to try model](https://colab.research.google.com/github/taskswithcode/GriT/blob/master/TWCGRiT.ipynb)  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/taskswithcode/GriT/blob/master/TWCGRiT.ipynb)
-- Also qualitatively compares this model with Object detection and Captioning using Detic with ChatGPT _(notes below)_
+- Evalution notes of overall scene summary generation using GRiT + Detic with ChatGPT
 - [Original repo - below](#a-generative-region-to-text-transformer-for-object-understanding )
 <p align="center">
   <a href="main.png">
@@ -29,12 +29,14 @@
 </p>
 <br/>
 
-<div style=\"font-size:32px; color: #2f2f2f; text-align: center\"><b>Evaluation notes</b></div>
-<div style=\"font-size:20px; color: #4f4f4f; text-align: center\"><i>Captioning for detected objects captures some aspect of the object features beyond just the object class name. This is a consequence of the captioning component getting object features in the form of image patches. For instance in some pictures, the captioning describes the "sky" (detected object) as clear vs dark etc.<br/>This particular aspect is perhaps a distinguising factor of this approach compared to dense captioning using a model like Detic which feeds the object class name with coordinates and dimensions to ChatGPT. While ChatGPT's output is complementary to the object level dense captioning of GriT particularly the ability of the model to offer rich summary of a scene beyond just individual objects, it is at a disadvantage in its description since it is <b>blind</b> to the characteristics of the object, since it only gets as input object name, position, and size.<br/>Detic's object detection capability may appear to be better than GrIT in images tested only because of the difference in training set (images were selected from a royalty free site <a href="https://www.pexels.com/">Pexels</a>.<br/><br/> </i></div>
+<div style=\"font-size:32px; color: #2f2f2f; text-align: center\"><b>Notes on using GRiT+Detic with ChatGPT</b></div>
+<div style=\"font-size:20px; color: #4f4f4f; text-align: center\"><i>Captioning for detected objects with GRiT captures some aspect of the object features beyond just the object class name. This is a consequence of the captioning component getting object features in the form of image patches. For instance in some pictures, the captioning describes the "sky" (detected object) as clear vs dark etc.<br/>This particular aspect is perhaps a distinguising factor of GRiT's approach compared to using a model like Detic which only outputs object classes. Detic's object detection capability may appear to be better than GRiT in images tested only because of the difference in training set. So if we combine these two model outputs and use them as input to ChatGPT we get a rich overall scene summary. Images were selected from a royalty free site <a href="https://www.pexels.com/">Pexels</a>.<br/><br/> </i></div>
 
 <div style=\"font-size:32px; color: #2f2f2f; text-align: center\"><b>Related Links</b></div>
-<div style=\"font-size:20px; color: #4f4f4f; text-align: center\"><a href="https://twitter.com/TasksWithCode/status/1602038479571099649?s=20&t=0NclGlJF5OCVDA3HHkO4eg">Twitter thread </a>comparing this model to Detic with ChatGPT</div>
+<div style=\"font-size:20px; color: #4f4f4f; text-align: center\"><a href="https://twitter.com/TasksWithCode/status/1602757853252444160?s=20&t=Lq19bDiM-1BLXw51L3iovw">Twitter thread </a>showing the performance of GRiT+Detic with ChatGPT. ChatGPT output quality improves for Winograd schemas when passing it bounding box information as well as dense captioning output by GRiT</div>
+<div style=\"font-size:20px; color: #4f4f4f; text-align: center\"><a href="https://twitter.com/TasksWithCode/status/1602038479571099649?s=20&t=0NclGlJF5OCVDA3HHkO4eg">Twitter thread </a>comparing this model to Detic with ChatGPT. GRiT's dense captioning output improves ChatGPT's narrative compared to Detic which only detects classes with bounding boxes</div>
 <div style=\"font-size:20px; color: #4f4f4f; text-align: center\"><a href="https://huggingface.co/spaces/taskswithcode/DeticChatGPT">A Hugging Face app 🤗 using to Detic </a>to output object classes with coordinates and dimensions which can be used to cut-and-paste to ChatGPT playground for dense captioning.</div>
+
 <br/>
 <br/>
 
